@@ -147,7 +147,7 @@ class RING
 
 			
 //				Fill second and third edges: \
-//											  \
+//							      \
 
 				for (int i=(smpcnt*2); i!=0; i--) 
 				{
@@ -161,7 +161,7 @@ class RING
 
 
 //				Fill forth edge:
-//								  /
+//						  /
 
 				for (int i=smpcnt; i!=0; i--)
 				{
