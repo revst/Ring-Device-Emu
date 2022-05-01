@@ -4,10 +4,12 @@
  Device is composed with a few microchips, the most important of them are two:
 
  КР1012ГП3 -  Generator of the upper tones of the tempered scale.
+ 
  КМ573РФ2  -  N-MOS ROM (2Kx8) 16Kbit = 2048bytes of music data. (Only 1024kb is used.)
 
 
  I decided to unsolder N-MOS ROM for better needs, like reparing of old computers,
+ 
  and also to dump a musical data from N-MOS ROM to file (ROM.BIN).
 
  In place of N-MOS ROM an temporary buttons were soldered to create some kind of musical instrument.
@@ -16,6 +18,7 @@
 
 
  Next I want to write a program for a dumped musical data listening.
+ 
  And to use a Triangle (And colored Triangle) sound form instead of Meander.
 
  Clean Triangle:
