@@ -18,11 +18,13 @@
  Next I want to write a program for a dumped musical data listening.
  And to use a Triangle (And colored Triangle) sound form instead of Meander.
 
- Clean Triangle: /\  /\
-             		   \/  \
+ Clean Triangle:
+ /\  /\
+   \/  \
 
- Colored Triangle: /|\   /|\
-            		      \|/
+ Colored Triangle:
+ /|\   /|\
+    \|/
 
 
  КР1012ГП3 can produce 32 tones, an multimeter was used to take a frequency readings.
