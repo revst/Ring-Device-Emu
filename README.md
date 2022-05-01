@@ -8,6 +8,7 @@
  КМ573РФ2  -  N-MOS ROM (2Kx8) 16Kbit = 2048bytes of music data. (Only 1024kb is used.)
 
 
+
  I decided to unsolder N-MOS ROM for better needs, like reparing of old computers,
  
  and also to dump a musical data from N-MOS ROM to file (ROM.BIN).
@@ -15,6 +16,7 @@
  In place of N-MOS ROM an temporary buttons were soldered to create some kind of musical instrument.
 
  (See images IMG_20220501_090701.jpg and IMG_20220501_091021.jpg)
+
 
 
  Next I want to write a program for a dumped musical data listening.
@@ -30,7 +32,9 @@
  / | \ | /  
  
   
+  
  КР1012ГП3 can produce 32 tones, an multimeter was used to take a frequency readings.
+ 
 
 
  Each byte of ROM.BIN data contains a 8 digits that can be interpretated as:
