@@ -21,8 +21,8 @@ class RING
 																						//from the source byte.
 
 		
-		switch (freq)						//Convert coded tone frequency value from ROM file to real frequency in Hz.
-		{									//Every 32 values of frequency were experimentally taken with multimeter. 
+		switch (freq)				//Convert coded tone frequency value from ROM file to real frequency in Hz.
+		{					//Every 32 values of frequency were experimentally taken with multimeter. 
 		case 0: freq = 686;
 		break;
 		case 16: freq = 697;
@@ -91,9 +91,9 @@ class RING
 		
 		freq/=octave; //Set frequency by 2 times lower if low octave was selected.
 		int interrupt = ((b & (1<<5))/ (1<<5)); //Pick out Interrupt bit from the fifth digit of the source byte.
-												// (1-Interrupt with Pause, 0-No Actions)
+											// (1-Interrupt with Pause, 0-No Actions)
 		int stop =  ((b & (1<<7))/ (1<<7)); //Pick out Stop bit from the seventh digit of the source byte.
-												// (0-Stop, 1-No Actions)
+											// (0-Stop, 1-No Actions)
 		byte silence = 127; // Prepare a silence value of PCM 8-bit wave data. 
 		
 			if (stop == 0) // Write 1 sec of silence in wave data.
@@ -120,9 +120,9 @@ class RING
 			double smp44100time = 2.2675736961451247165532879818594e-5; // Time of the one sample at 44100 quantization frequency.
 			double freqtime = 1d/freq; // Time of the one complete triangle period of the incoming playback frequency.
 			int smpcnt = (int)((freqtime/smp44100time)/4); // Estimate amount of samples needed for the ascending or 
-														// descending edge of the triangle sound frequency.
+									// descending edge of the triangle sound frequency.
 			byte smpincr = (byte)((128/smpcnt)-1); //Estimate increment of the 8-bit PCM level for the ascending or descending
-												// edge of the triangle sound frequency.
+								// edge of the triangle sound frequency.
 		
 			int smpnotelength = 5500; // Set a time for one note playback to 0.125 sec.
 	
